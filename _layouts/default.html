@@ -2,6 +2,8 @@
 <html lang="en">
     <head>
         <title>
+            {% if page.title %}{{ page.title }} | 
+            {% elsif page.lab.title %}{{ page.lab.tile }} | {% endif %}
             {{ site.title }}
         </title>
         <meta charset="utf-8">
